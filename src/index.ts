@@ -30,7 +30,9 @@ const btn = document.getElementById("btn")! as HTMLButtonElement;
   // alert("CLICK!");
 // }); 
 
-form.addEventListener("submit", (e) => {
+function handleSubmit(e: SubmitEvent){
   e.preventDefault(); 
   console.log("SUBMITTED!")
-})
+};
+
+form.addEventListener("submit", handleSubmit);
