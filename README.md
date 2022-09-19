@@ -6,3 +6,5 @@ Learn how to create a To Do list using Typescript
 * `tsc --watch` or `tsc -w` to compile 
 
 * `node dist/index.js` to run the newly compiled code 
+
+* 
