@@ -9,12 +9,13 @@ const form = document.querySelector("form");
 const list = document.getElementById("todolist");
 const input = document.getElementById("todo1");
 const btn = document.getElementById("btn");
-const toDos = [];
+const toDos = readToDos();
+toDos.forEach(createToDoElement);
 function readToDos() {
     const toDosJson = localStorage.getItem("todos");
     if (toDosJson === null)
         return [];
-    return console.log(JSON.parse(toDosJson));
+    return JSON.parse(toDosJson);
 }
 function handleSubmit(e) {
     e.preventDefault();

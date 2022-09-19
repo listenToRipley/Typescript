@@ -35,12 +35,13 @@ interface ToDo {
   completed: boolean; // to show if it has been done or not. 
 }
 
-const toDos: ToDo[] = []; 
+const toDos: ToDo[] = readToDos();
+toDos.forEach(createToDoElement); 
 
-function readToDos() {
+function readToDos(): ToDo[] {
   const toDosJson = localStorage.getItem("todos");
   if (toDosJson === null) return [];
-    return console.log(JSON.parse(toDosJson));
+  return JSON.parse(toDosJson);
 }
 
 function handleSubmit(e: SubmitEvent){
