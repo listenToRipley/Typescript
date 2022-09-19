@@ -7,4 +7,4 @@ Learn how to create a To Do list using Typescript
 
 * `node dist/index.js` to run the newly compiled code 
 
-* 
+* `open index.html` to open in browser
