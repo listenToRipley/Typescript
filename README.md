@@ -24,3 +24,10 @@ Using [lite-server](https://www.npmjs.com/package/lite-server).
 **General Notes**
 
 Best results, do not use Chrome as your browser. There is an known issue with lite-server. 
+
+#### This repository contains 
+
+* - [To Do](./TODO/)
+  a basic process for creating a to do list in Typescript. 
+* - [Classes](./CLASSES/)
+  a review of how classes work with Typescript. 
