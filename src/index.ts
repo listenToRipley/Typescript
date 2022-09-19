@@ -13,10 +13,16 @@ console.log("hello".replaceAll("h", "`")); //without the lib option, we will not
 
 // const numChars = (mystery as string).length; 
 
-const btn = document.getElementById("btn");
+const input = document.getElementById("todo1")! as HTMLInputElement; // should be able to use value now in the add event listener
+
+
+const btn = document.getElementById("btn")!;
 console.log("SHOW BUTTON >>", btn); 
 
 // ?. allows for this to be added, since the ? acts as a if statement/ truthy checker. 
 btn?.addEventListener("click", () => {
-  alert("CLICK!");
+  alert(input.value); 
+  input.value = " "
+
+  // alert("CLICK!");
 }); 
