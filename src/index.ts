@@ -32,6 +32,11 @@ const btn = document.getElementById("btn")! as HTMLButtonElement;
 
 function handleSubmit(e: SubmitEvent){
   e.preventDefault(); 
+  const newToDoText = input.value;
+  const newLI = document.createElement("LI");
+  newLI.append(newToDoText);
+  const list = document.getElementById("todolist");
+  list?.append(newLI); 
   console.log("SUBMITTED!")
 };
 
