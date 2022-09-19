@@ -33,11 +33,18 @@ const btn = document.getElementById("btn")! as HTMLButtonElement;
 function handleSubmit(e: SubmitEvent){
   e.preventDefault(); 
   const newToDoText = input.value;
-  const newLI = document.createElement("LI");
-  newLI.append(newToDoText);
+  const newLi = document.createElement("li");
+  newLi.append(newToDoText);
   const list = document.getElementById("todolist");
-  list?.append(newLI); 
-  console.log("SUBMITTED!")
+
+  const checkbox = document.createElement("input"); 
+  checkbox.type = "checkbox"; 
+  newLi.append(checkbox); 
+
+  list?.append(newLi); 
+  input.value = ""; 
+
+  console.log("SUBMITTED!");
 };
 
 form.addEventListener("submit", handleSubmit);

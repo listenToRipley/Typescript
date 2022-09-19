@@ -11,10 +11,14 @@ const btn = document.getElementById("btn");
 function handleSubmit(e) {
     e.preventDefault();
     const newToDoText = input.value;
-    const newLI = document.createElement("LI");
-    newLI.append(newToDoText);
+    const newLi = document.createElement("li");
+    newLi.append(newToDoText);
     const list = document.getElementById("todolist");
-    list === null || list === void 0 ? void 0 : list.append(newLI);
+    const checkbox = document.createElement("input");
+    checkbox.type = "checkbox";
+    newLi.append(checkbox);
+    list === null || list === void 0 ? void 0 : list.append(newLi);
+    input.value = "";
     console.log("SUBMITTED!");
 }
 ;
