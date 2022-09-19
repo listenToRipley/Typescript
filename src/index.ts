@@ -30,6 +30,13 @@ const btn = document.getElementById("btn")! as HTMLButtonElement;
   // alert("CLICK!");
 // }); 
 
+interface ToDo {
+  text: string;
+  completed: boolean; 
+}
+
+const toDos: ToDo[] = []; 
+
 function handleSubmit(e: SubmitEvent){
   e.preventDefault(); 
   const newToDoText = input.value;

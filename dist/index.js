@@ -8,6 +8,7 @@ console.log("hello".replaceAll("h", "`"));
 const form = document.querySelector("form");
 const input = document.getElementById("todo1");
 const btn = document.getElementById("btn");
+const toDos = [];
 function handleSubmit(e) {
     e.preventDefault();
     const newToDoText = input.value;
