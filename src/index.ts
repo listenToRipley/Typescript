@@ -14,9 +14,12 @@ console.log("hello".replaceAll("h", "`")); //without the lib option, we will not
 // const numChars = (mystery as string).length; 
 
 const input = document.getElementById("todo1")! as HTMLInputElement; // should be able to use value now in the add event listener
+//alternative syntax
+// const input = document.getElementById("todo1")!; 
+// (<HTMLInputElement>input).value // this will not work with JSX
 
 
-const btn = document.getElementById("btn")!;
+const btn = document.getElementById("btn")! as HTMLButtonElement;
 console.log("SHOW BUTTON >>", btn); 
 
 // ?. allows for this to be added, since the ? acts as a if statement/ truthy checker. 
