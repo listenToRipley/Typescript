@@ -18,6 +18,8 @@ function handleSubmit(e) {
     };
     toDos.push(newToDo);
     createToDoElement(newToDo);
+    localStorage.setItem("todo", JSON.stringify(toDos));
+    console.log("Local Storage == ", localStorage);
     input.value = "";
     console.log("SUBMITTED!");
 }

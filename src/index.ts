@@ -41,7 +41,7 @@ const toDos: ToDo[] = [];
 function handleSubmit(e: SubmitEvent){
   e.preventDefault(); // prevents reset. 
   
-  //created elemtn. 
+  //created element. 
   const newToDo: ToDo = {
     text: input.value, 
     completed: false //always starts are not completed. 
@@ -50,6 +50,10 @@ function handleSubmit(e: SubmitEvent){
   toDos.push(newToDo); 
 
   createToDoElement(newToDo); 
+
+  //add to local storage
+  localStorage.setItem("todo", JSON.stringify(toDos));
+  console.log("Local Storage == ",localStorage);
 
   input.value = ""; 
   console.log("SUBMITTED!");
