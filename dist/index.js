@@ -11,6 +11,11 @@ const btn = document.getElementById("btn");
 const toDos = [];
 function handleSubmit(e) {
     e.preventDefault();
+    const newToDo = {
+        text: input.value,
+        completed: false
+    };
+    toDos.push(newToDo);
     const newToDoText = input.value;
     const newLi = document.createElement("li");
     newLi.append(newToDoText);

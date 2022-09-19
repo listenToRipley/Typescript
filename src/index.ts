@@ -32,13 +32,22 @@ const btn = document.getElementById("btn")! as HTMLButtonElement;
 
 interface ToDo {
   text: string;
-  completed: boolean; 
+  completed: boolean; // to show if it has been done or not. 
 }
 
 const toDos: ToDo[] = []; 
 
 function handleSubmit(e: SubmitEvent){
-  e.preventDefault(); 
+  e.preventDefault(); // prevents reset. 
+  
+  //created elemtn. 
+  const newToDo: ToDo = {
+    text: input.value, 
+    completed: false //always starts are not completed. 
+  }; 
+
+  toDos.push(newToDo); 
+
   const newToDoText = input.value;
   const newLi = document.createElement("li");
   newLi.append(newToDoText);
