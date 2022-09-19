@@ -14,3 +14,9 @@ Using [lite-server](https://www.npmjs.com/package/lite-server).
 * `open index.html` to open in browser
 
 * `npm start` to start lite-server
+
+**Notes on Typescript**
+
+*tsconfig.json*
+
+- [lib](https://www.typescriptlang.org/tsconfig#lib) 

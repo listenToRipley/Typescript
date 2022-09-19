@@ -1,4 +1,3 @@
-"use strict";
 // console.log('Hello World!'); 
 const btn = document.getElementById("btn");
 console.log("SHOW BUTTON >>", btn);
