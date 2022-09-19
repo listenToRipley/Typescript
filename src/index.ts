@@ -19,7 +19,6 @@ const input = document.getElementById("todo1")! as HTMLInputElement; // should b
 // const input = document.getElementById("todo1")!; 
 // (<HTMLInputElement>input).value // this will not work with JSX
 
-
 const btn = document.getElementById("btn")! as HTMLButtonElement;
 // console.log("SHOW BUTTON >>", btn); 
 
@@ -37,6 +36,12 @@ interface ToDo {
 }
 
 const toDos: ToDo[] = []; 
+
+function readToDos() {
+  const toDosJson = localStorage.getItem("todos");
+  if (toDosJson === null) return [];
+    return console.log(JSON.parse(toDosJson));
+}
 
 function handleSubmit(e: SubmitEvent){
   e.preventDefault(); // prevents reset. 

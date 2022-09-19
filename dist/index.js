@@ -10,6 +10,12 @@ const list = document.getElementById("todolist");
 const input = document.getElementById("todo1");
 const btn = document.getElementById("btn");
 const toDos = [];
+function readToDos() {
+    const toDosJson = localStorage.getItem("todos");
+    if (toDosJson === null)
+        return [];
+    return console.log(JSON.parse(toDosJson));
+}
 function handleSubmit(e) {
     e.preventDefault();
     const newToDo = {
