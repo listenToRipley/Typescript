@@ -42,7 +42,32 @@ function readToDos(): ToDo[] {
   const toDosJson = localStorage.getItem("todos");
   if (toDosJson === null) return [];
   return JSON.parse(toDosJson);
-}
+
+};
+
+function savedToDos() {
+  localStorage.setItem("todo", JSON.stringify(toDos));
+}; 
+
+function createToDoElement(todo: ToDo) {
+  const {text, completed} = todo
+  const newLi = document.createElement("li");
+  const checkbox = document.createElement("input"); 
+  checkbox.type = "checkbox"; 
+
+  //watch checkbox 
+  checkbox.addEventListener("change",() => {
+    todo.completed = checkbox.checked; 
+    console.log("CHECKBOX IS CHECKED == ",todo.completed)
+    savedToDos(); 
+  });
+
+  newLi.append(text);
+  newLi.append(checkbox); 
+
+  list?.append(newLi); 
+}; 
+
 
 function handleSubmit(e: SubmitEvent){
   e.preventDefault(); // prevents reset. 
@@ -58,24 +83,12 @@ function handleSubmit(e: SubmitEvent){
   createToDoElement(newToDo); 
 
   //add to local storage
-  localStorage.setItem("todo", JSON.stringify(toDos));
+  savedToDos(); 
   console.log("Local Storage == ",localStorage);
 
   input.value = ""; 
   console.log("SUBMITTED!");
 };
-
-function createToDoElement(todo: ToDo) {
-  const {text, completed} = todo
-  const newLi = document.createElement("li");
-  const checkbox = document.createElement("input"); 
-  checkbox.type = "checkbox"; 
-
-  newLi.append(text);
-  newLi.append(checkbox); 
-
-  list?.append(newLi); 
-}; 
 
 
 form.addEventListener("submit", handleSubmit);
