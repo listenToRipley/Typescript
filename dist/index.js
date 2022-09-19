@@ -16,6 +16,11 @@ function handleSubmit(e) {
         completed: false
     };
     toDos.push(newToDo);
+    createToDoElement(newToDo);
+    console.log("SUBMITTED!");
+}
+;
+function createToDoElement(todo) {
     const newToDoText = input.value;
     const newLi = document.createElement("li");
     newLi.append(newToDoText);
@@ -25,7 +30,6 @@ function handleSubmit(e) {
     newLi.append(checkbox);
     list === null || list === void 0 ? void 0 : list.append(newLi);
     input.value = "";
-    console.log("SUBMITTED!");
 }
 ;
 form.addEventListener("submit", handleSubmit);

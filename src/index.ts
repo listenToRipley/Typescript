@@ -48,6 +48,12 @@ function handleSubmit(e: SubmitEvent){
 
   toDos.push(newToDo); 
 
+  createToDoElement(newToDo); 
+
+  console.log("SUBMITTED!");
+};
+
+function createToDoElement(todo: ToDo) {
   const newToDoText = input.value;
   const newLi = document.createElement("li");
   newLi.append(newToDoText);
@@ -59,8 +65,7 @@ function handleSubmit(e: SubmitEvent){
 
   list?.append(newLi); 
   input.value = ""; 
+}; 
 
-  console.log("SUBMITTED!");
-};
 
 form.addEventListener("submit", handleSubmit);
