@@ -1,0 +1,24 @@
+{
+  "name": "TStodo",
+  "version": "1.0.0",
+  "description": "Learn how to create a To Do list using Typescript",
+  "main": "index.js",
+  "scripts": {
+    "start": "lite-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/listenToRipley/tsToDo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/listenToRipley/tsToDo/issues"
+  },
+  "homepage": "https://github.com/listenToRipley/tsToDo#readme",
+  "dependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
