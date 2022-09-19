@@ -12,7 +12,7 @@ console.log("hello".replaceAll("h", "`")); //without the lib option, we will not
 // let mystery: unknown = "Solving the mystery"; 
 
 // const numChars = (mystery as string).length; 
-
+const form = document.querySelector("form")!; 
 const input = document.getElementById("todo1")! as HTMLInputElement; // should be able to use value now in the add event listener
 //alternative syntax
 // const input = document.getElementById("todo1")!; 
@@ -20,12 +20,12 @@ const input = document.getElementById("todo1")! as HTMLInputElement; // should b
 
 
 const btn = document.getElementById("btn")! as HTMLButtonElement;
-console.log("SHOW BUTTON >>", btn); 
+// console.log("SHOW BUTTON >>", btn); 
 
-// ?. allows for this to be added, since the ? acts as a if statement/ truthy checker. 
-btn?.addEventListener("click", () => {
-  alert(input.value); 
-  input.value = " "
+// // ?. allows for this to be added, since the ? acts as a if statement/ truthy checker. 
+// btn?.addEventListener("click", () => {
+//   alert(input.value); 
+//   input.value = " "
 
   // alert("CLICK!");
-}); 
+// }); 
