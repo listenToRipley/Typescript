@@ -54,11 +54,12 @@ function createToDoElement(todo: ToDo) {
   const newLi = document.createElement("li");
   const checkbox = document.createElement("input"); 
   checkbox.type = "checkbox"; 
+  checkbox.checked = todo.completed; 
 
   //watch checkbox 
   checkbox.addEventListener("change",() => {
     todo.completed = checkbox.checked; 
-    console.log("CHECKBOX IS CHECKED == ",todo.completed)
+    console.log("CHECKBOX IS CHECKED == ",todo.completed);
     savedToDos(); 
   });
 
