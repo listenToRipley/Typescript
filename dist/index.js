@@ -6,6 +6,7 @@ function printDouble(msg) {
 printDouble('Hello World! :D! ');
 console.log("hello".replaceAll("h", "`"));
 const form = document.querySelector("form");
+const list = document.getElementById("todolist");
 const input = document.getElementById("todo1");
 const btn = document.getElementById("btn");
 const toDos = [];
@@ -17,19 +18,18 @@ function handleSubmit(e) {
     };
     toDos.push(newToDo);
     createToDoElement(newToDo);
+    input.value = "";
     console.log("SUBMITTED!");
 }
 ;
 function createToDoElement(todo) {
-    const newToDoText = input.value;
+    const { text, completed } = todo;
     const newLi = document.createElement("li");
-    newLi.append(newToDoText);
-    const list = document.getElementById("todolist");
     const checkbox = document.createElement("input");
     checkbox.type = "checkbox";
+    newLi.append(text);
     newLi.append(checkbox);
     list === null || list === void 0 ? void 0 : list.append(newLi);
-    input.value = "";
 }
 ;
 form.addEventListener("submit", handleSubmit);

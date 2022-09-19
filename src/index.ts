@@ -13,6 +13,7 @@ console.log("hello".replaceAll("h", "`")); //without the lib option, we will not
 
 // const numChars = (mystery as string).length; 
 const form = document.querySelector("form")!; 
+const list = document.getElementById("todolist");
 const input = document.getElementById("todo1")! as HTMLInputElement; // should be able to use value now in the add event listener
 //alternative syntax
 // const input = document.getElementById("todo1")!; 
@@ -50,21 +51,20 @@ function handleSubmit(e: SubmitEvent){
 
   createToDoElement(newToDo); 
 
+  input.value = ""; 
   console.log("SUBMITTED!");
 };
 
 function createToDoElement(todo: ToDo) {
-  const newToDoText = input.value;
+  const {text, completed} = todo
   const newLi = document.createElement("li");
-  newLi.append(newToDoText);
-  const list = document.getElementById("todolist");
-
   const checkbox = document.createElement("input"); 
   checkbox.type = "checkbox"; 
+
+  newLi.append(text);
   newLi.append(checkbox); 
 
   list?.append(newLi); 
-  input.value = ""; 
 }; 
 
 
