@@ -20,3 +20,7 @@ Using [lite-server](https://www.npmjs.com/package/lite-server).
 *tsconfig.json*
 
 - [lib](https://www.typescriptlang.org/tsconfig#lib) 
+
+**General Notes**
+
+Best results, do not use Chrome as your browser. There is an known issue with lite-server. 

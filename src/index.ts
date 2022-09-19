@@ -29,3 +29,8 @@ const btn = document.getElementById("btn")! as HTMLButtonElement;
 
   // alert("CLICK!");
 // }); 
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault(); 
+  console.log("SUBMITTED!")
+})
