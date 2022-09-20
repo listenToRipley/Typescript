@@ -1,8 +1,11 @@
 class Player {
   //ts requires you to stay what these items are before they are called within the constructor 
-  initials:string;
-  first:string;
-  last:string; 
+  public initials:string;
+  public readonly first:string;
+  public readonly last:string; 
+  // score:number; < don't need this, can infer
+
+  score = 0; 
 
   constructor(initials: string, first: string, last:string) {
     this.initials = initials;
