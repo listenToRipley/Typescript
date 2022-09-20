@@ -4,13 +4,30 @@ class Player {
         this.initials = initials;
         this.first = first;
         this.last = last;
-        this.score = 0;
+        this._score = 0;
     }
     ;
     secretMethod() {
         console.log("SECRET METHOD");
     }
     ;
+    get fullName() {
+        return `${this.first} ${this.last}`;
+    }
+    ;
+    get score() {
+        return this._score;
+    }
+    ;
+    set score(newScore) {
+        if (newScore < this._score) {
+            this._score = newScore;
+        }
+        ;
+    }
+    ;
 }
 ;
 const mame = new Player("MBD", "Mame", "Dennis");
+mame.fullName;
+mame.score;

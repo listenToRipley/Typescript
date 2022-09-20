@@ -72,6 +72,9 @@ const joeBob = NPC("ghost", "___", "Joe", "Bob");
 ## TS Notes
 
 These two key words are only used in TS. Will not show in a JS file - will be ignored when it goes to compile. 
-public - only in TS. Everything defaults to public in a class.
-private - Making variables only accessible within the class. Not the same thing as a # or _ in front of the variable like JS. 
+`public` - only in TS. Everything defaults to public in a class.
+`private` - Making variables only accessible within the class. Not the same thing as a # or _ in front of the variable like JS. 
   Needs to be es2015 or higher.  
+
+`get` - if no `set` is provided, will default the method as readonly. 
+`set` - do not annotate with value, will causes an error since this should always be void.  
