@@ -31,5 +31,8 @@ Best results, do not use Chrome as your browser. There is an known issue with li
   a basic process for creating a to do list in Typescript. 
     - how the DOM interacts with TS
     - Type Assertions 
+    - readonly
 * - [Classes](./CLASSES/)
   a review of how classes work with Typescript. 
+    -public
+    - private

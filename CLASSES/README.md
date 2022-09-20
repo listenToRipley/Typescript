@@ -73,4 +73,5 @@ const joeBob = NPC("ghost", "___", "Joe", "Bob");
 
 These two key words are only used in TS. Will not show in a JS file. 
 public - only in TS. Everything defaults to public in a class.
-private - 
+private - Making variables only accessible within the class. Not the same thing as a # or _ in front of the variable like JS. 
+  Needs to be es2015 or higher.  
