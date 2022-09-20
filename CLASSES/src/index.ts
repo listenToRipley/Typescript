@@ -4,7 +4,7 @@ class Player {
   // public readonly first:string;
   // public readonly last:string; 
   // score:number = 0; < don't need this, can infer
-  _score = 0; // still private 
+  protected _score = 0; // still private 
 
   //using the public keyword inhere, it known as a shorthand params properties. 
   constructor(public initials: string, public first: string, public last:string) {
@@ -40,3 +40,12 @@ const mame = new Player("MBD", "Mame", "Dennis");
 // mame.secretMethod(); 
 mame.fullName; 
 mame.score; 
+
+class NPC extends Player {
+  isNPC: boolean = true;
+  
+  maxScore() {
+    this._score = 10000000; 
+  }
+
+};

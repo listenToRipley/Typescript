@@ -31,3 +31,13 @@ class Player {
 const mame = new Player("MBD", "Mame", "Dennis");
 mame.fullName;
 mame.score;
+class NPC extends Player {
+    constructor() {
+        super(...arguments);
+        this.isNPC = true;
+    }
+    maxScore() {
+        this._score = 10000000;
+    }
+}
+;

@@ -75,6 +75,7 @@ These two key words are only used in TS. Will not show in a JS file - will be ig
 `public` - only in TS. Everything defaults to public in a class.
 `private` - Making variables only accessible within the class. Not the same thing as a # or _ in front of the variable like JS. 
   Needs to be es2015 or higher.  
+`protected` - Allows you to access these variables in child classes. So if you are going to extend and something should be `private`, use `protected` instead. 
 
 `get` - if no `set` is provided, will default the method as readonly. 
 `set` - do not annotate with value, will causes an error since this should always be void.  
