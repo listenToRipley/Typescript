@@ -68,3 +68,9 @@ class NPC extends Player {
 const joeBob = NPC("ghost", "___", "Joe", "Bob");
 
 ```
+
+## TS Notes
+
+These two key words are only used in TS. Will not show in a JS file. 
+public - only in TS. Everything defaults to public in a class.
+private - 
