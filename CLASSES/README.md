@@ -5,6 +5,7 @@ Classes - JS uses *class* as a keyword. This is a way of prototyping.
 Example: 
 ```javascript 
 class Player {
+  static description = "Player in the game"; // this only exists on this class, not the individual players. Belongs only to the class with the static keyword. 
   score = 0; //if this is always the same when the class is initialized.
   #highScore = 100000 // # = this property should only be used inside player class, replaces _ 
   numLives = 10; // these are not static, and can be altered. 
@@ -17,9 +18,16 @@ class Player {
       this.last = last;
   }
 
-  //gets - builds this
+  //gets - builds as though this is a Player property 
   get fullName() {
     return `${this.first} ${this.last}`;
+  };
+
+  //set - set the property, can also be used to create errors. 
+  set newHighScore(newScore) {
+    if (this.#highScore < newScore) {
+      this.#highScore = newScore; 
+    }
   };
 
   taunt() { //this is a method 
@@ -35,10 +43,6 @@ class Player {
     return this.#highScore; 
   };
 
-  newHighScore(newScore) {
-    this.#highScore = newScore; 
-  };
-
 ;}
 
 const player1 = new Player("NMK", "Natalie", "Kendrick"); 
@@ -48,4 +52,19 @@ player2.loseLife();
 player1.getHighScore(); 
 player2.newHighScore(200000);
 player1.fullname; //as if this is a property is defined. 
+
+//inheritance 
+
+class NPC extends Player {
+  constructor(power) { 
+    super(initials, first, last); //super is used for constructors called in inheritances classes. This will allow the requirements from the extended class
+    this.powers = power; 
+  };   
+
+  isNPC = true; 
+
+}
+
+const joeBob = NPC("ghost", "___", "Joe", "Bob");
+
 ```
