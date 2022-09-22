@@ -34,5 +34,14 @@ Best results, do not use Chrome as your browser. There is an known issue with li
     - readonly
 * - [Classes](./CLASSES/)
   a review of how classes work with Typescript. 
-    -public
+    - public
     - private
+    - protected 
+    - get 
+    - set 
+    - interfaces w/ classes
+      - implement 
+    - abstracts 
+
+* - [Generics](./GENERICS/)
+  what are generics and how do you use them. 
