@@ -84,4 +84,6 @@ These two key words are only used in TS. Will not show in a JS file - will be ig
 To then create this without error and be able to create these new items on initialization, use `constructor(public param:type)`
 Methods can be added in a similar way. 
 
+`abstract` - If you use this keyword on a class, you cannot instantiate it by itself. This should be used as a way to create requirements to be places on extended classes, such as methods or constructor elements.  
+
 See index.ts for examples. 

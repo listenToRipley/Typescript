@@ -62,3 +62,14 @@ class Jacket {
     }
 }
 const winter = new Jacket("black", "Burlington", -10);
+class Employee {
+    constructor(first, last) {
+        this.first = first;
+        this.last = last;
+    }
+    ;
+    greet() {
+        console.log("HELLO!");
+    }
+}
+;

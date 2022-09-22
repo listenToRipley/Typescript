@@ -76,3 +76,14 @@ class Jacket implements Colorful, Printable {
 }
 
 const winter = new Jacket("black", "Burlington", -10); 
+
+//Abstracts 
+abstract class Employee {
+  //methods can must be defined by children elements
+  constructor(public first:string, public last:string){};
+  abstract getPay(): number; // just saying this needs to exist to create this class. 
+  greet() {
+    console.log("HELLO!"); 
+  } 
+}; 
+
