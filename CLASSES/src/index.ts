@@ -49,3 +49,16 @@ class NPC extends Player {
   }
 
 };
+
+//interfaces
+interface Colorful {
+  color: string;
+}; 
+
+class Bike implements Colorful {
+  constructor(public color: string) {
+    //color will be initialized 
+  }
+}; 
+
+const bike1 = new Bike("red");

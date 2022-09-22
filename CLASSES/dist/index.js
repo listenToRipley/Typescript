@@ -41,3 +41,11 @@ class NPC extends Player {
     }
 }
 ;
+;
+class Bike {
+    constructor(color) {
+        this.color = color;
+    }
+}
+;
+const bike1 = new Bike("red");
