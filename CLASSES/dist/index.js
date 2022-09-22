@@ -74,15 +74,28 @@ class Employee {
 }
 ;
 class FullTimeEmployee extends Employee {
+    constructor(first, last, salary) {
+        super(first, last);
+        this.salary = salary;
+    }
     getPay() {
-        return 55;
+        return this.salary;
     }
     ;
 }
 ;
 class PartTimeEmployee extends Employee {
+    constructor(first, last, hourlyRate, hoursWorked) {
+        super(first, last);
+        this.hourlyRate = hourlyRate;
+        this.hoursWorked = hoursWorked;
+    }
     getPay() {
-        return 21241;
+        return this.hourlyRate * this.hoursWorked;
     }
 }
 ;
+const betty = new FullTimeEmployee("Betty", "White", 100000);
+console.log(betty.getPay());
+const bob = new PartTimeEmployee("Bob", "Barker", 75, 36);
+console.log(bob.getPay());
