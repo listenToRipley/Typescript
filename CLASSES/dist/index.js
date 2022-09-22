@@ -49,3 +49,10 @@ class Bike {
 }
 ;
 const bike1 = new Bike("red");
+class Jacket {
+    constructor(color) {
+        this.color = color;
+    }
+    ;
+}
+const winter = new Jacket("black");
