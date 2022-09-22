@@ -50,9 +50,9 @@ class Bike {
 ;
 const bike1 = new Bike("red");
 class Jacket {
-    constructor(color) {
+    constructor(color, maker, warmLevel) {
         this.color = color;
     }
     ;
 }
-const winter = new Jacket("black");
+const winter = new Jacket("black", "Burlington", 10);

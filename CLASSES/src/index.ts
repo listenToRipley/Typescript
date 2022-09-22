@@ -65,7 +65,7 @@ const bike1 = new Bike("red");
 
 //can be reused on different classes as well
 class Jacket implements Colorful {
-  constructor(public color:string) {}; 
+  constructor(public color:string, maker:string, warmLevel: number) {}; 
 }
 
-const winter = new Jacket("black"); 
+const winter = new Jacket("black", "Burlington", 10); 
