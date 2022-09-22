@@ -87,3 +87,14 @@ abstract class Employee {
   } 
 }; 
 
+class FullTimeEmployee extends Employee {
+  getPay() {
+    return 55;
+  }; 
+}; 
+
+class PartTimeEmployee extends Employee {
+  getPay(): number {
+    return 21241; 
+  }
+};

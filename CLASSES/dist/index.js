@@ -73,3 +73,16 @@ class Employee {
     }
 }
 ;
+class FullTimeEmployee extends Employee {
+    getPay() {
+        return 55;
+    }
+    ;
+}
+;
+class PartTimeEmployee extends Employee {
+    getPay() {
+        return 21241;
+    }
+}
+;
