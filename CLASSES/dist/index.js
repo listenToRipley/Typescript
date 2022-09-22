@@ -49,10 +49,16 @@ class Bike {
 }
 ;
 const bike1 = new Bike("red");
+;
 class Jacket {
     constructor(color, maker, warmLevel) {
         this.color = color;
+        this.maker = maker;
+        this.warmLevel = warmLevel;
     }
     ;
+    print() {
+        console.log(`You already have a winter coat! It's ${this.color} and is rated for ${this.warmLevel} degrees`);
+    }
 }
-const winter = new Jacket("black", "Burlington", 10);
+const winter = new Jacket("black", "Burlington", -10);

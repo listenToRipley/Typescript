@@ -82,3 +82,6 @@ These two key words are only used in TS. Will not show in a JS file - will be ig
 
 `interfaces` w/ `class` - you can use interfaces to set params or standards for specific classes and use them on different classes to standardize information. between the `class`  and `interfaces` variable names, use `implement` to pass in the interface element. 
 To then create this without error and be able to create these new items on initialization, use `constructor(public param:type)`
+Methods can be added in a similar way. 
+
+See index.ts for examples. 

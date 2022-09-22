@@ -63,9 +63,16 @@ class Bike implements Colorful {
 
 const bike1 = new Bike("red");
 
+interface Printable {
+  print(): void; //a method
+};
+
 //can be reused on different classes as well
-class Jacket implements Colorful {
-  constructor(public color:string, maker:string, warmLevel: number) {}; 
+class Jacket implements Colorful, Printable {
+  constructor(public color:string, public maker:string, public warmLevel:number) {}; 
+  print() {
+    console.log(`You already have a winter coat! It's ${this.color} and is rated for ${this.warmLevel} degrees`);
+  }
 }
 
-const winter = new Jacket("black", "Burlington", 10); 
+const winter = new Jacket("black", "Burlington", -10); 
