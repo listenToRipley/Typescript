@@ -54,3 +54,16 @@ console.log(getString);
 const getNumber = getRandomElement<number>([1, 42, 34, 34, 26, 234, 242, 523]);
 console.log(getNumber); 
 //generic still can infer. 
+
+//multiple options, don't have to provide return type, since it will be inferred.
+// this is to prevent ANY from being used.  
+function merge<T,U>(object1: T, object2: U) {
+  return {
+    ...object1,
+    ...object2
+  };
+};
+
+// output in intersection between the two types. 
+const house = merge({house:"Kendrick"}, {pets:["Gruff", "Smidge"]});
+console.log(house)
