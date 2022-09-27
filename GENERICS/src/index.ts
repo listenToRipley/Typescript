@@ -53,3 +53,4 @@ console.log(getString);
 
 const getNumber = getRandomElement<number>([1, 42, 34, 34, 26, 234, 242, 523]);
 console.log(getNumber); 
+//generic still can infer. 
