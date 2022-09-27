@@ -49,3 +49,14 @@ function makeEmptyList() {
 const strings = makeEmptyList();
 const array = makeEmptyList();
 const boolArray = makeEmptyList();
+class PLaylist {
+    constructor() {
+        this.queue = [];
+    }
+    add(el) {
+        this.queue.push(el);
+    }
+    ;
+}
+const songs = new PLaylist();
+const videos = new PLaylist();

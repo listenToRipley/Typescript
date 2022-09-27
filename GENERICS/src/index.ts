@@ -88,3 +88,28 @@ const array = makeEmptyList();
 const boolArray = makeEmptyList<boolean>(); 
 
 //CLASSES 
+interface Song {
+  title: string;
+  artist: string; 
+  length: number;
+}
+
+interface Video {
+  title: string;
+  creator: string; 
+  length: number;
+  resolution: number;
+}
+
+
+class PLaylist <T> {
+  public queue: T[] = [];
+  add(el: T) {
+    this.queue.push(el);
+  };
+}
+
+const songs = new PLaylist<Song>(); 
+// songs.add()
+const videos = new PLaylist<Video>(); 
+// videos.add()
