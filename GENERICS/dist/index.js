@@ -38,3 +38,14 @@ function merge(object1, object2) {
 ;
 const house = merge({ house: "Kendrick" }, { pets: ["Gruff", "Smidge"] });
 console.log(house);
+;
+function printDoubleLength(thing) {
+    return thing.length * 2;
+}
+;
+function makeEmptyList() {
+    return [];
+}
+const strings = makeEmptyList();
+const array = makeEmptyList();
+const boolArray = makeEmptyList();

@@ -57,7 +57,8 @@ console.log(getNumber);
 
 //multiple options, don't have to provide return type, since it will be inferred.
 // this is to prevent ANY from being used.  
-function merge<T,U>(object1: T, object2: U) {
+// extends can extend the properties 
+function merge<T extends object,U extends object>(object1: T, object2: U) {
   return {
     ...object1,
     ...object2
@@ -67,3 +68,23 @@ function merge<T,U>(object1: T, object2: U) {
 // output in intersection between the two types. 
 const house = merge({house:"Kendrick"}, {pets:["Gruff", "Smidge"]});
 console.log(house)
+
+interface Length {
+  length: number;
+};
+
+function printDoubleLength<T extends Length>(thing: T): number {
+  return thing.length * 2;
+};
+
+
+//provide default using = 
+function makeEmptyList<T = number>(): T[] {
+  return [];
+}
+
+const strings = makeEmptyList<string>(); 
+const array = makeEmptyList(); 
+const boolArray = makeEmptyList<boolean>(); 
+
+//CLASSES 
