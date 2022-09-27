@@ -37,8 +37,19 @@ function identity<Type>(item:Type): Type { // we establish a relationship that s
   return item; // usually you will see an T in stead of Type.
 };
 
-identity<string>('Returns a string');
-identity<number>(7);
-identity<boolean>(true);
+// identity<string>('Returns a string');
+// identity<number>(7);
+// identity<boolean>(true);
 
-identity<Cat>({name:'moew', breed:'house-cat'}); // cat goes in, and cat comes out. 
+// identity<Cat>({name:'moew', breed:'house-cat'}); // cat goes in, and cat comes out.
+
+function getRandomElement<T>(list: T[]):T {
+  const randIdx = Math.floor(Math.random() * list.length-1);
+  return list[randIdx];
+};
+
+const getString = getRandomElement<string>(["a", "b", "c"]);
+console.log(getString);
+
+const getNumber = getRandomElement<number>([1, 42, 34, 34, 26, 234, 242, 523]);
+console.log(getNumber); 

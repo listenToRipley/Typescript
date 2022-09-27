@@ -23,7 +23,12 @@ function identity(item) {
     return item;
 }
 ;
-identity('Returns a string');
-identity(7);
-identity(true);
-identity({ name: 'moew', breed: 'house-cat' });
+function getRandomElement(list) {
+    const randIdx = Math.floor(Math.random() * list.length - 1);
+    return list[randIdx];
+}
+;
+const getString = getRandomElement(["a", "b", "c"]);
+console.log(getString);
+const getNumber = getRandomElement([1, 42, 34, 34, 26, 234, 242, 523]);
+console.log(getNumber);
