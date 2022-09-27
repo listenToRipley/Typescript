@@ -49,3 +49,4 @@ Best results, do not use Chrome as your browser. There is an known issue with li
   - Classes 
 
 * - [Type Narrowing](./TYPENARROWING/)
+  Determine ways that content can be "narrow" in scope so functions are be more meticulously followed. 
