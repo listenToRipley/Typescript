@@ -45,3 +45,7 @@ Best results, do not use Chrome as your browser. There is an known issue with li
 
 * - [Generics](./GENERICS/)
   what are generics and how do you use them. 
+  - Functions
+  - Classes 
+
+* - [Type Narrowing](./TYPENARROWING/)
