@@ -148,8 +148,38 @@ interface Pig {
   kind: "pig"; 
 };
 
-type FarmAnimal = Pig | Rooster | Cows; 
+interface Sheep { 
+  name: string;
+  weight: number; 
+  age: number; 
+  kind: "sheep"; 
+};
+
+type FarmAnimal = Pig | Rooster | Cow ; 
 
 function getFarmAnimalSound(animal: FarmAnimal):string {
-  animal
+  switch(animal.kind) {
+    case "pig": 
+      return "Oink!"
+    case "cow":
+      return "Moo!"
+    case "rooster": 
+      return "Cock-a-doodle-doo!"; 
+    // case "sheep": 
+    //   return "Bah!" 
+    default: //nevers
+      // should never make it here if all cases where handled this. 
+      const _exhaustiveCheck: never = animal; 
+      return _exhaustiveCheck
+  }
 }
+
+const stevie:Rooster = {
+  name: "Stevie Chicks",
+  weight: 2, 
+  age: 1.5,
+  kind: 'rooster' // still has to be passed in. 
+}
+
+console.log(getFarmAnimalSound(stevie)); 
+

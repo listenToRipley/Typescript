@@ -22,6 +22,9 @@ Should be added a the resulting type within a function  `: parameterName is Type
 
 #### Discriminated Unions
 Determine a common patterns involved in multiples places and share properties. 
-Way to know what is included is the same across specific variable.  
+Way to know what is included is the same across specific variable.
+"kind" or "type" would be the same in all elements, but is different in it's components. The setting should be literal.   
 
 #### Exhaustiveness Checks w/ Never
+A way to exhaust all other options. 
+Use the type `never` to show that content should not be added at a particular point. 
