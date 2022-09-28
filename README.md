@@ -50,3 +50,11 @@ Best results, do not use Chrome as your browser. There is an known issue with li
 
 * - [Type Narrowing](./TYPENARROWING/)
   Determine ways that content can be "narrow" in scope so functions are be more meticulously followed. 
+  - Type of Guard 
+  - Truthiness Guards 
+  - Equality Narrowing 
+  - w/ In Operator
+  - Instanceof 
+  - Working with the Type Predicates 
+  - Discriminated Unions
+  - Exhaustiveness Checks w/ Never
