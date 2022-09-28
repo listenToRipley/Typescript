@@ -15,11 +15,14 @@ Using [lite-server](https://www.npmjs.com/package/lite-server).
 
 * `npm start` to start lite-server
 
+
 **Notes on Typescript**
 
-*tsconfig.json*
+*tsconfig.json* Formatting and requirements on the ts compiler and interactions. 
 
 - [lib](https://www.typescriptlang.org/tsconfig#lib) 
+
+* `.d.ts` declaration files. These files do not use JS, but are a way to do typechecking and allow us to keep declarative information separate. [Documentation on this.](https://www.typescriptlang.org/docs/handbook/declaration-files/templates/module-d-ts.html) Often if you "go to type definition", you will be taken to one of these documents. 
 
 **General Notes**
 
@@ -58,3 +61,10 @@ Best results, do not use Chrome as your browser. There is an known issue with li
   - Working with the Type Predicates 
   - Discriminated Unions
   - Exhaustiveness Checks w/ Never
+
+  * - [3rd Party Libraries](./LIBRARIES/)
+    Use cases to establishing types on external libraries. 
+
+#### Additional technologies used
+[Axios](https://www.npmjs.com/package/axios)
+[Lodash](https://lodash.com/)
