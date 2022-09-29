@@ -1,5 +1,5 @@
 import Dog from './Dog.js';
-import { add, multiply, divide } from './utiles';
+import { add, multiply, divide } from './utils';
 import ShelterDog from './ShelterDog';
 console.log("From index file");
 const gruff = new Dog("Gruff", "Pure Breed Good Boy", 5);
