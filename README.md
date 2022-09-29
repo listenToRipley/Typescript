@@ -67,6 +67,12 @@ Best results, do not use Chrome as your browser. There is an known issue with li
   * - [3rd Party Libraries](./LIBRARIES/)
     Use cases to establishing types on external libraries. 
 
+  * - [Modules](./MODULES/)
+    How to use modules with Typescript. 
+
+  * - [Web Pack](./WEBPCK/)
+
 #### Additional technologies used
 [Axios](https://www.npmjs.com/package/axios)
 [Lodash](https://lodash.com/)
+[Web Pack](https://webpack.js.org/)

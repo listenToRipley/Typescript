@@ -1,0 +1,16 @@
+{
+  "name": "webpck",
+  "version": "1.0.0",
+  "description": "The purpose of web pack helps organize/compress/coordinate between various elements within your application.  This is a way to create a balance between HTTP requests and writing massive files list.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "lite-server",
+    "start-server": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
