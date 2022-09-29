@@ -4,6 +4,9 @@ This is a way to create a balance between HTTP requests and writing massive file
 
 Without webpack, your .ts files will need to `import` will need to include the .js at the end so the file can be located. 
 
+### Serve
+Using the Webpack Dev Serve replaces lite-serve and allows for the config information to be saved in cache, taking up less place. 
+
 ### Best Practices 
 
 Reinstall TS so the version is locked within your package.json file. 
@@ -35,5 +38,6 @@ output - output name and location
 [Lodash](https://lodash.com/)
 [Webpack](https://webpack.js.org/)
 [Webpack CLI](https://www.npmjs.com/package/webpack-cli)
+[Webpack Dev Server](https://github.com/webpack/webpack-dev-server)
 [Typescript](https://www.npmjs.com/package/typescript)
 [Typescript Loader](https://www.npmjs.com/package/ts-loader)
