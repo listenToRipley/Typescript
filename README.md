@@ -73,8 +73,19 @@ Best results, do not use Chrome as your browser. There is an known issue with li
     How to use modules with Typescript. 
 
   * - [Webpack](./WEBPACK/)
+    Way to create smaller bundling for large projects
+
+  * - [React and Typescript](./ts_react/)
+    What it looks like to use typescript in JSX
 
 #### Additional technologies used
 [Axios](https://www.npmjs.com/package/axios)
 [Lodash](https://lodash.com/)
+[Lodash](https://lodash.com/)
 [Webpack](https://webpack.js.org/)
+[Webpack CLI](https://www.npmjs.com/package/webpack-cli)
+[Webpack Dev Server](https://github.com/webpack/webpack-dev-server)
+[Webpack Clean Plugin](https://www.npmjs.com/package/clean-webpack-plugin)
+[Typescript](https://www.npmjs.com/package/typescript)
+[Typescript Loader](https://www.npmjs.com/package/ts-loader)
+[React](https://www.typescriptlang.org/docs/handbook/react.html)
