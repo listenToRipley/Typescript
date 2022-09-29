@@ -20,7 +20,7 @@ modules =
 resolve - 
   extensions - the ending of the type of document that this will look for. 
 output - output name and location
-  filename - file generation name
+  filename - file generation name and where the information will be compressed. 
   path - location where document will output 
 
 #### Technologies Used 
