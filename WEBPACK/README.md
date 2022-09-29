@@ -39,5 +39,6 @@ output - output name and location
 [Webpack](https://webpack.js.org/)
 [Webpack CLI](https://www.npmjs.com/package/webpack-cli)
 [Webpack Dev Server](https://github.com/webpack/webpack-dev-server)
+[Webpack Clean Plugin](https://www.npmjs.com/package/clean-webpack-plugin)
 [Typescript](https://www.npmjs.com/package/typescript)
 [Typescript Loader](https://www.npmjs.com/package/ts-loader)

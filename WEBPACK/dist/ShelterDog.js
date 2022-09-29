@@ -1,4 +1,4 @@
-import Dog from './Dog.js';
+import Dog from './Dog';
 export default class ShelterDog extends Dog {
     constructor(name, breed, age, shelter) {
         super(name, breed, age);
@@ -6,3 +6,4 @@ export default class ShelterDog extends Dog {
     }
     ;
 }
+//# sourceMappingURL=ShelterDog.js.map

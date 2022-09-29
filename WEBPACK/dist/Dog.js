@@ -10,3 +10,4 @@ export default class Dog {
     }
 }
 ;
+//# sourceMappingURL=Dog.js.map
