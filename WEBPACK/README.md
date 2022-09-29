@@ -10,6 +10,13 @@ Reinstall TS so the version is locked within your package.json file.
 
 [Quick start options](https://webpack.js.org/guides/typescript/#basic-setup)
 
+The bundle document should be added to the scripts in of the html instead of the index file. 
+
+#### tsconfig.json 
+
+"module": "ES2015" - needs to have modules set to this in order to have local access. 
+"sourceMap": true - allows the webpack to be mapped back to the original state. 
+
 #### webpage.config 
 entry - where to start bundling, based on where the config file is located. 
 modules = 
