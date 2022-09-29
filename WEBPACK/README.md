@@ -19,6 +19,7 @@ The bundle document should be added to the scripts in of the html instead of the
 
 #### webpage.config 
 entry - where to start bundling, based on where the config file is located. 
+devtool - with sourceMap in tsconfig, allows original information to be mapped. 
 modules = 
   rules - what to do when encountering specific file types. Can have multiples
     test - contains a regular expression for accepted conditions. ? makes optional
