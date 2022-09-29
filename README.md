@@ -70,7 +70,7 @@ Best results, do not use Chrome as your browser. There is an known issue with li
   * - [Modules](./MODULES/)
     How to use modules with Typescript. 
 
-  * - [Web Pack](./WEBPCK/)
+  * - [Webpack](./WEBPACK/)
 
 #### Additional technologies used
 [Axios](https://www.npmjs.com/package/axios)
