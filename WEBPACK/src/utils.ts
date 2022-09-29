@@ -1,6 +1,6 @@
 import _ from "lodash"; //this will cause an error in the browser!
 export function add(x: number, y: number) {
-  return _.add(x, y);
+  return _.add(x, y); // _ hows the add function
 }
 
 export function multiply(x: number, y: number) {
