@@ -26,6 +26,8 @@ Using [lite-server](https://www.npmjs.com/package/lite-server).
 
 * `.d.ts` declaration files. These files do not use JS, but are a way to do typechecking and allow us to keep declarative information separate. [Documentation on this.](https://www.typescriptlang.org/docs/handbook/declaration-files/templates/module-d-ts.html) Often if you "go to type definition", you will be taken to one of these documents. 
 
+* `npm webpack ` - check scripts in package.json for details, but it will run webpack. 
+
 **General Notes**
 
 Best results, do not use Chrome as your browser. There is an known issue with lite-server. 
