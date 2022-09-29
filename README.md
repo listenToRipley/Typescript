@@ -7,6 +7,8 @@ Using [lite-server](https://www.npmjs.com/package/lite-server).
   ~ See package.json "start" script. 
 
 **Commands**
+* `tsc -- init` starting a new project
+
 * `tsc --watch` or `tsc -w` to compile 
 
 * `node dist/index.js` to run the newly compiled code 
