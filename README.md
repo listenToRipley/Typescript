@@ -75,4 +75,4 @@ Best results, do not use Chrome as your browser. There is an known issue with li
 #### Additional technologies used
 [Axios](https://www.npmjs.com/package/axios)
 [Lodash](https://lodash.com/)
-[Web Pack](https://webpack.js.org/)
+[Webpack](https://webpack.js.org/)
