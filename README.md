@@ -5,6 +5,7 @@
 ### Auto Sync
 Using [lite-server](https://www.npmjs.com/package/lite-server). 
   ~ See package.json "start" script. 
+Depending on the package, different scripts could be used. 
 
 **Commands**
 * `tsc -- init` starting a new project
@@ -79,6 +80,7 @@ Best results, do not use Chrome as your browser. There is an known issue with li
     What it looks like to use typescript in JSX
 
 #### Additional technologies used
+[NPM](https://docs.npmjs.com/cli/v6/commands/npm-install)
 [Axios](https://www.npmjs.com/package/axios)
 [Lodash](https://lodash.com/)
 [Lodash](https://lodash.com/)
@@ -88,4 +90,7 @@ Best results, do not use Chrome as your browser. There is an known issue with li
 [Webpack Clean Plugin](https://www.npmjs.com/package/clean-webpack-plugin)
 [Typescript](https://www.npmjs.com/package/typescript)
 [Typescript Loader](https://www.npmjs.com/package/ts-loader)
-[React](https://www.typescriptlang.org/docs/handbook/react.html)
+[React](https://create-react-app.dev/docs/adding-typescript/)
+
+#### Toubleshooting
+Run `pwd` that to verify you are in the correct folder and using the associated scripts. 
