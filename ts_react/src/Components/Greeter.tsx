@@ -1,7 +1,11 @@
 import React from 'react'; 
 
+interface GreeterProps {
+  person: string; 
+}
+
 //props is an object, with an agr and it's type. 
-function Greeter(props: {person: string}): JSX.Element {  
+function Greeter(props: GreeterProps): JSX.Element {  
   
   return <h1>Hello {props.person}</h1>
 
