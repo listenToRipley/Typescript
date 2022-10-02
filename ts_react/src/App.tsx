@@ -1,7 +1,12 @@
 import React, {useState} from 'react';
 import './App.css';
+
+//components 
 import Greeter from './Components/Greeter'; 
 import ShoppingList from './Components/ShoppingList';
+import ShoppingForm from './Components/ShoppingForm';
+
+//modules 
 import Items from './modules/items'; 
 
 function App() {
@@ -12,6 +17,7 @@ function App() {
     <div>
       <Greeter/> 
       <ShoppingList items={items}/>
+      <ShoppingForm/> 
     </div>
   );
 }
