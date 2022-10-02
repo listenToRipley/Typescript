@@ -1,18 +1,19 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {useState} from 'react';
 import './App.css';
 import Greeter from './Components/Greeter'; 
 import ShoppingList from './Components/ShoppingList';
 
+
+interface Items { // this is the array of objects 
+  id: number; 
+  product: string;
+  quantity: number; 
+
+} 
+
 function App() {
-
-
-  const items = [
-    {id: 1, product:"Lemon", quantity: 3},
-    {id: 2, product:"Chili Pepper", quantity: 1},
-    {id: 3, product:"Whole Chicken", quantity: 1}
-  ]
-
+// useState, call the items by interface as the type and set the state as an empty array to start with
+  const [items, setItems] = useState<Items[]>([]);
 
   return (
     <div>
