@@ -1,7 +1,7 @@
 import React from 'react'; 
 
 interface GreeterProps {
-  person: string; 
+  person?: string; 
 }
 
 //props is an object, with an agr and it's type. 

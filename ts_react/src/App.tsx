@@ -2,13 +2,13 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Greeter from './Components/Greeter'; 
+import ShoppingList from './Components/ShoppingList';
 
 function App() {
   return (
     <div>
-      <Greeter person={"Natalie"}/>
-      <Greeter person={"Gruff"}/>
-      <Greeter person={"Karlen"}/>
+      <Greeter/> 
+      <ShoppingList/>
     </div>
   );
 }
