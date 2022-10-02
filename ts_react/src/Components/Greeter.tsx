@@ -5,9 +5,9 @@ interface GreeterProps {
 }
 
 //props is an object, with an agr and it's type. 
-function Greeter(props: GreeterProps): JSX.Element {  
+function Greeter({person}: GreeterProps): JSX.Element {  
   
-  return <h1>Hello {props.person}</h1>
+  return <h1>Hello {person}</h1>
 
 };
 
