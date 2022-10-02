@@ -1,8 +1,9 @@
 import React from 'react'; 
 
-function Greeter(): JSX.Element {  
+//props is an object, with an agr and it's type. 
+function Greeter(props: {person: string}): JSX.Element {  
   
-  return <h1>Hello</h1>
+  return <h1>Hello {props.person}</h1>
 
 };
 

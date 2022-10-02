@@ -6,7 +6,9 @@ import Greeter from './Components/Greeter';
 function App() {
   return (
     <div>
-      <Greeter/>
+      <Greeter person={"Natalie"}/>
+      <Greeter person={"Gruff"}/>
+      <Greeter person={"Karlen"}/>
     </div>
   );
 }
