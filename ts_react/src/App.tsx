@@ -2,14 +2,7 @@ import React, {useState} from 'react';
 import './App.css';
 import Greeter from './Components/Greeter'; 
 import ShoppingList from './Components/ShoppingList';
-
-
-interface Items { // this is the array of objects 
-  id: number; 
-  product: string;
-  quantity: number; 
-
-} 
+import Items from './modules/items'; 
 
 function App() {
 // useState, call the items by interface as the type and set the state as an empty array to start with
