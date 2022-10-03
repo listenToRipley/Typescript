@@ -16,10 +16,10 @@ function App() {
 // useState, call the items by interface as the type and set the state as an empty array to start with
   const [items, setItems] = useState<Items[]>([]);
 
-  const addItem = (product: string) => {
+  const addItem = (product: string, quantity: number) => {
     console.log('returned state to app \n', product)
     let newIndex = 0
-    setItems([...items, {id: uuid(), product, quantity: 1 } ])
+    setItems([...items, {id: uuid(), product: product, quantity: quantity } ])
   }
 
   console.log(items)
