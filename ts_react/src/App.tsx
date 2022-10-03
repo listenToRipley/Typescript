@@ -15,7 +15,11 @@ function App() {
 
   const addItem = (product: string) => {
     console.log('returned state to app \n', product)
+    let newIndex = 0
+    setItems([...items, {id: newIndex++, product, quantity: 1 } ])
   }
+
+  console.log(items)
 
   return (
     <div>
