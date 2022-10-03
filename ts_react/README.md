@@ -9,6 +9,10 @@ When you create a component with JSX, they are considered of type `JSX.Element`,
 You create an interface with props involved in the component. You can also destruct the props. 
 [See Greeter.tsx for examples.](./src/Components/Greeter.tsx)
 
+#### UseRef 
+This is specific to react, this is a react hook. This creating a reference to the location of the element. They type of this would be related to the location/content once rendered on the HTML page. This means the type will be <HTMLInputElement>
+The value must start as null until it is rendered. 
+
 ##### Modules
 you can import and export modules much like anything else so you create a less crowded format. 
 

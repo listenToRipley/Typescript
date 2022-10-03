@@ -7,6 +7,7 @@ export default function ShoppingForm() {
   function handleSubmit(event: React.FormEvent) {
     event.preventDefault(); 
     console.log(`hello, ${event}`)
+    let newItem = inputRef.current!.value // ! there will be a value!
 
   }
   return <div>
