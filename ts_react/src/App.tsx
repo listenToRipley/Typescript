@@ -13,11 +13,15 @@ function App() {
 // useState, call the items by interface as the type and set the state as an empty array to start with
   const [items, setItems] = useState<Items[]>([]);
 
+  const addItem = (product: string) => {
+    console.log('returned state to app \n', product)
+  }
+
   return (
     <div>
       <Greeter/> 
       <ShoppingList items={items}/>
-      <ShoppingForm/> 
+      <ShoppingForm onClickAdd={addItem}/> 
     </div>
   );
 }
