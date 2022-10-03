@@ -91,6 +91,7 @@ Best results, do not use Chrome as your browser. There is an known issue with li
 [Typescript](https://www.npmjs.com/package/typescript)
 [Typescript Loader](https://www.npmjs.com/package/ts-loader)
 [React](https://create-react-app.dev/docs/adding-typescript/)
+[uuid](https://www.npmjs.com/package/uuid4)
 
 #### Toubleshooting
 Run `pwd` that to verify you are in the correct folder and using the associated scripts. 

@@ -22,6 +22,8 @@ you can import and export modules much like anything else so you create a less c
 
 This is older syntax and not used as widely anymore. 
 
+#### Additional Packages
+[uuid](https://www.npmjs.com/package/uuid4) - used for key generation 
 
 #### Resources 
 [Typescript/React Cheatsheeet](https://github.com/typescript-cheatsheets/react#reacttypescript-cheatsheet)
