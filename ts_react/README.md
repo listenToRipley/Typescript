@@ -8,6 +8,10 @@ When you create a component with JSX, they are considered of type `JSX.Element`,
 ##### Props
 You create an interface with props involved in the component. You can also destruct the props. 
 [See Greeter.tsx for examples.](./src/Components/Greeter.tsx)
+
+##### Modules
+you can import and export modules much like anything else so you create a less crowded format. 
+
 ###### Functional Components - old version
 
 `React.FC` or `React.FunctionalComponent` - when creating a functional component within JSX, type of annotation that should be used before creating an arrow function. 
